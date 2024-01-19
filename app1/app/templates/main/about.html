@@ -1,6 +1,7 @@
+
 {% extends "main/base.html" %}
 {%load static%}
-
+{% extends "about.html" %}
 
 
 
@@ -13,7 +14,11 @@
 
 
 {% block content  %}
-    <h1 class="mt-5 pt-5"><strong>Магазин мебели HOME</strong></h1>
+<div>class="mt-5 pt-5 bg-white custom-shadow"
+    
+    <h2 class='m-2'><strong>{{content}}</strong></h2>
+    <p class = 'm-2'>{{text_on_page}}</p>
+    </div>
 {% endblock  %}
 
 
